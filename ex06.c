@@ -1,3 +1,6 @@
+/*
+*
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -18,12 +21,10 @@ int main()
 
 	if ((sexo == 'F' || sexo == 'f') && idade < 25)
 	{
+		// remove o '\n' da string
 		int tamanho_string = strlen(nome) - 1;
 		if (nome[tamanho_string] == '\n')
 		{
-			printf("%d\n\n",tamanho_string);
-			printf("%c\n\n",nome[tamanho_string]);
-
 			nome[tamanho_string] = '\0';
 		}
 
