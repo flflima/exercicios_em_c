@@ -3,7 +3,7 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include "funcoes.h"
 
 int main()
 {
@@ -21,12 +21,7 @@ int main()
 
 	if ((sexo == 'F' || sexo == 'f') && idade < 25)
 	{
-		// remove o '\n' da string
-		int tamanho_string = strlen(nome) - 1;
-		if (nome[tamanho_string] == '\n')
-		{
-			nome[tamanho_string] = '\0';
-		}
+		removeQuebraLinhaString(nome);
 
 		printf("%s - ACEITA\n", nome);
 	}
