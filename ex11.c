@@ -27,7 +27,7 @@ int main()
 	for(i = tamanhoPalavra; i > 0; i--)
 	{
 		int j;
-		for(j = 0; j < (tamanhoPalavra - i + 1); j++)
+		for(j = 0; j < (tamanhoPalavra - i) + 1; j++)
 		{
 			printf("%s ", palavra);
 		}
